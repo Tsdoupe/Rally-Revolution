@@ -1,15 +1,18 @@
 import Header from './components/Header';
 import './App.css';
 import Footer from './components/Footer';
-//import ClothingCard from './features/clothing/ClothingCard.js';
+import MensList from './features/clothing/MensList.js';
+//import ClothingDirectoryPage from './pages/ClothingDirectoryPage';
+// import ClothingCard from './features/clothing/ClothingCard.js';
+// import {MENS} from './app/shared/MENS';
 
 function App() {
     return (
         <div className='App'>
           <Header />
-          Page start without pics or info
-          {/* <ClothingCard />
-            Need to add clothing={CLOTHING[0]} to clothing card component once we have array of pics */}
+          {/* <ClothingDirectoryPage /> */}
+          {/* <ClothingCard clothing= {MENS[0]} /> */}
+          <MensList />
           <Footer />
         </div>
     );

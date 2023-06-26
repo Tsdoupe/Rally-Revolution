@@ -1,22 +1,22 @@
-import { Card, CardImg, CardImgOverlay, CardTitle} from 'reacstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle} from 'reactstrap';
 
 const ClothingCard = (props) => {
+
+    // if (!props.clothing) {
+    //     return null;
+    // }
     return (
         <Card>
-            <CardImg
+            <CardImg 
                 width='100%'
-                src={props.clothing.image}
-                alt={props.clothing.name}
+                src={props.men.image}
+                alt={props.men.name}
             />
             <CardImgOverlay>
-                <CardTitle> {props.clothing.name} </CardTitle>
+                <CardTitle> {props.men.name} </CardTitle>
             </CardImgOverlay>
         </Card>
     );
 };
-
-// Need to get images of clothing Brandon wants sponsored at top of page.
-// For now the code above will work until needing to add his pictures and play with the picture sizes
-// Will need to create a file similar to CAMPSITES which holds array of images brandon may want at top of page
 
 export default ClothingCard;
