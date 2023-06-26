@@ -1,16 +1,18 @@
-import {Container, Row, Col, Button} from 'reactstrap';
+import {useState} from 'react';
+import {Container, Row, Col} from 'reactstrap';
 import MensDetail from '../features/clothing/MensDetail';
 import MensList from '../features/clothing/MensList';
-import {selectRandomMen} from '../features/clothing/mensSlice';
+import { selectMenById } from '../features/clothing/mensSlice';
 
 const ClothingDirectoryPage = () => {
-    const selectedMen = selectRandomMen();
+    const [menId, setMenId] = useState(0);
+    const selectedMen = selectMenById(menId);
 
     return (
         <Container>
             <Row>
                 <Col sm='5' md='7'>
-                    <MensList />
+                    <MensList setMenId={setMenId } />
                 </Col>
                 <Col sm='7' md='5'>
                     <MensDetail men={selectedMen} />

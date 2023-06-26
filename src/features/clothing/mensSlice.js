@@ -4,6 +4,10 @@ export const selectAllMens = () => {
     return MENS;
 };
 
-export const selectRandomMen = () => {
-    return MENS[Math.floor(MENS.length * Math.random())];
+export const selectMenById = (id) => {
+    return MENS.find((men) => men.id === id);
 };
+
+// export const selectRandomMen = () => {
+//     return MENS[Math.floor(MENS.length * Math.random())];
+// };

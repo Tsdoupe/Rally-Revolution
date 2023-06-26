@@ -12,7 +12,7 @@ export const MENS = [
         image: headshots,
         featured: false,
         description:
-            ''
+            'Headshots Only - Black'
     },
     {
         id: 1,
@@ -20,7 +20,7 @@ export const MENS = [
         image: headshotsWhite,
         featured: false,
         description:
-            ''
+            'Headshots Only - White'
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ export const MENS = [
         image: rallyRevolutionWhite,
         featured: false,
         description:
-            ''
+            'Rally Revolution - White'
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ export const MENS = [
         image: rallyRevolutionBlack,
         featured: true,
         description:
-            ""
+            "Rally Revolution - Black"
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ export const MENS = [
         image: mileHighWhite,
         featured: false,
         description:
-            ''
+            'Mile High - White'
     },
     {
         id: 5,
@@ -52,6 +52,6 @@ export const MENS = [
         image: beachWhite,
         featured: false,
         description:
-            ''
+            'Beach - White'
     }
 ];
