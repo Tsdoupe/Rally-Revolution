@@ -1,11 +1,12 @@
 import {Container} from 'reactstrap';
 import WomensList from '../features/clothing/WomensList';
+import SubHeader from '../components/SubHeader';
 
 const WomensPage = () => {
 
     return (
         <Container>
-            Womans page
+            <SubHeader current='Womens' />
             <WomensList />
         </Container>
     );

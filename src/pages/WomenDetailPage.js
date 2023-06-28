@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { selectWomenById } from '../features/clothing/womensSlice';
 import WomensDetail from '../features/clothing/WomensDetail';
 import {WomensReviewsList} from '../features/reviews/ReviewsList';
+import SubHeader from '../components/SubHeader';
 
 const WomensDetailPage = () => {
     const { womenId } = useParams();
@@ -10,6 +11,7 @@ const WomensDetailPage = () => {
 
     return (
         <Container>
+            <SubHeader current={women.name} detail={true} />
             <Row>
                 <WomensDetail women={women} />
                 <WomensReviewsList womenId={womenId} />
