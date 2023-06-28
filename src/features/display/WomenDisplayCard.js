@@ -1,6 +1,6 @@
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
-const DisplayCard = ({item}) => {
+const WomenDisplayCard = ({item}) => {
     const { image, name, description} = item;
 
     return (
@@ -14,4 +14,4 @@ const DisplayCard = ({item}) => {
     )
 };
 
-export default DisplayCard;
+export default WomenDisplayCard;

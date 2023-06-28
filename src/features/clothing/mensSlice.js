@@ -5,7 +5,7 @@ export const selectAllMens = () => {
 };
 
 export const selectMenById = (id) => {
-    return MENS.find((men) => men.id === id);
+    return MENS.find((men) => men.id === parseInt(id));
 };
 
 export const selectFeaturedMen = () => {

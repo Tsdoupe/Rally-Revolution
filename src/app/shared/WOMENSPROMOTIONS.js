@@ -6,12 +6,12 @@ import mileHighWhite from '../assets/img/mile-high-white.jpg';
 import beachWhite from '../assets/img/beach-white.jpg';
 
 //if brandon wanted promotions/clearance items, change text below and images
-export const PROMOTIONS = [
+export const WOMENSPROMOTIONS = [
     {
         id: 0,
         name: 'Headshots',
         image: headshots,
-        featured: true,
+        featured: false,
         description:
         ''
     },
@@ -43,7 +43,7 @@ export const PROMOTIONS = [
         id: 4,
         name: 'Mile High',
         image: mileHighWhite,
-        featured: false,
+        featured: true,
         description:
             ''
     },

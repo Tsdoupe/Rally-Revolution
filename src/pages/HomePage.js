@@ -1,11 +1,18 @@
-import {Container } from 'reactstrap';
-import DisplayList from '../features/display/DisplayList';
+import {Container, Row } from 'reactstrap';
+import MenDisplayList from '../features/display/MenDisplayList';
+import WomenDisplayList from '../features/display/WomenDisplayList';
 
 const HomePage = () => {
     return (
         <Container>
-            <DisplayList />
+            <Row>
+            <MenDisplayList />                
+            </Row>
+            <Row>
+            <WomenDisplayList />
+            </Row>
         </Container>
+
     );
 };
 

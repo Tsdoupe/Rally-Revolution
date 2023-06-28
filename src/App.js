@@ -8,6 +8,8 @@ import MensPage from './pages/MensPage';
 import WomensPage from './pages/WomensPage';
 import ReleasesPage from './pages/ReleasesPage';
 import AboutPage from './pages/AboutPage';
+import MenDetailPage from './pages/MenDetailPage';
+import WomenDetailPage from './pages/WomenDetailPage';
 
 function App() {
     return (
@@ -20,6 +22,14 @@ function App() {
             <Route path='newreleases' element={<ReleasesPage />} />
             <Route path='about' element={<AboutPage />} />
             <Route path='contact' element={<ContactPage />} />
+            <Route
+              path='mens/:menId'
+              element={<MenDetailPage />}
+            />
+            <Route
+              path='womens/:womenId'
+              element={<WomenDetailPage />}
+            />
           </Routes>
           <Footer />
         </div>

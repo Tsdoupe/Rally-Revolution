@@ -1,5 +1,5 @@
 import { Col, Row, } from 'reactstrap';
-import ClothingCard from './ClothingCard';
+import WomenClothingCard from './WomenClothingCard';
 import { selectAllWomens } from './womensSlice';
 
 const WomensList = () => {
@@ -9,8 +9,12 @@ const WomensList = () => {
         <Row className="ms-auto">
             {womens.map((women) => {
                 return (
-                    <Col md="5" className="m-4" key={women.id} >
-                        <ClothingCard women={women} />
+                    <Col 
+                        md="5" 
+                        className="m-4" 
+                        key={women.id} 
+                    >
+                        <WomenClothingCard women={women} />
                     </Col>
                 );
             })}

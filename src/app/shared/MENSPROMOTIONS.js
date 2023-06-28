@@ -5,30 +5,31 @@ import rallyRevolutionBlack from '../assets/img/rally-revolution-black.jpg';
 import mileHighWhite from '../assets/img/mile-high-white.jpg';
 import beachWhite from '../assets/img/beach-white.jpg';
 
-export const WOMENS = [
+//if brandon wanted promotions/clearance items, change text below and images
+export const MENSPROMOTIONS = [
     {
         id: 0,
-        name: 'Headshots Only - Black',
+        name: 'Headshots',
         image: headshots,
-        featured: false,
+        featured: true,
         description:
-            ''
+        ''
     },
     {
         id: 1,
-        name: 'Headshots Only - White',
+        name: 'Headshots',
         image: headshotsWhite,
         featured: false,
         description:
-            ''
+        ''
     },
     {
         id: 2,
         name: 'Rally Revolution',
         image: rallyRevolutionWhite,
         featured: false,
-        description:
-            ''
+        description: 
+        ''
     },
     {
         id: 3,
@@ -36,11 +37,11 @@ export const WOMENS = [
         image: rallyRevolutionBlack,
         featured: false,
         description:
-            ""
+            ''
     },
     {
         id: 4,
-        name: 'Mile High - White',
+        name: 'Mile High',
         image: mileHighWhite,
         featured: false,
         description:
@@ -48,9 +49,9 @@ export const WOMENS = [
     },
     {
         id: 5,
-        name: 'Beach - White',
+        name: 'Beach Party',
         image: beachWhite,
-        featured: true,
+        featured: false,
         description:
             ''
     }

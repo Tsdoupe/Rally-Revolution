@@ -1,8 +1,8 @@
 import { Col, Row, } from 'reactstrap';
-import ClothingCard from './ClothingCard';
+import MenClothingCard from './MenClothingCard';
 import { selectAllMens } from './mensSlice';
 
-const MensList = ({ setMenId }) => {
+const MensList = () => {
     const mens = selectAllMens();
 
     return (     
@@ -13,8 +13,8 @@ const MensList = ({ setMenId }) => {
                         md="5" 
                         className="m-4" 
                         key={men.id} 
-                        onClick={() => setMenId(men.id)}>
-                        <ClothingCard men={men} />
+                        >
+                        <MenClothingCard men={men} />
                     </Col>
                 );
             })}
