@@ -8,6 +8,10 @@ export const selectMenById = (id) => {
     return MENS.find((men) => men.id === id);
 };
 
+export const selectFeaturedMen = () => {
+    return MENS.find((men) => men.featured);
+}
+
 // export const selectRandomMen = () => {
 //     return MENS[Math.floor(MENS.length * Math.random())];
 // };

@@ -1,7 +1,6 @@
 import { Col, Row, } from 'reactstrap';
 import ClothingCard from './ClothingCard';
 import { selectAllMens } from './mensSlice';
-//import {MENS} from '../../app/shared/MENS';
 
 const MensList = ({ setMenId }) => {
     const mens = selectAllMens();
