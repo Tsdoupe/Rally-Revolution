@@ -28,11 +28,8 @@ const Footer = () => {
                         <a className='btn btn-social-icon btn-facebook' href='http://www.facebook.com/'>
                             <i className='fa fa-facebook' />
                         </a>{' '}
-                        <a className='btn btn-social-icon btn-twitter' href='http://twitter.com/'>
-                            <i className='fa fa-twitter' />
-                        </a>{' '}
-                        <a className='btn btn-social-icon btn-google' href='http://youtube.com/'>
-                            <i className='fa fa-youtube' />
+                        <a className='btn btn-social-icon btn-google' href='http://tiktok.com/'>
+                            <i className='fab fa-tiktok' />
                         </a>
                     </Col>
                     <Col xs='block' sm='4' className='text-center ms-auto d-none d-sm-block'>

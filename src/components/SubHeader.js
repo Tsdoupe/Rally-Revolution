@@ -16,6 +16,17 @@ const SubHeader = ({ current, detail }) => {
     }
   };
 
+  if (location.pathname === '/') {
+    return (
+      <Row>
+        <Col>
+          <h2> {current} </h2>
+          <hr />
+        </Col>
+      </Row>
+    );
+  }
+
   return (
     <Row>
       <Col>
