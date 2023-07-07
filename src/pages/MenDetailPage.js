@@ -12,8 +12,10 @@ const MensDetailPage = () => {
     return (
         <Container>
             <SubHeader current={men.name} detail={true} />
-            <Row>
-                <MensDetail men={men} />
+            <Row className='row-content'>
+                <MensDetail men={men} />               
+            </Row>
+            <Row className='row-content'>
                 <MensReviewsList menId={menId} />
             </Row>
         </Container>

@@ -1,5 +1,12 @@
+import {Container, Row, Col} from 'reactstrap';
+import SubHeader from '../components/SubHeader';
+
 const ReleasesPage = () => {
-    return <div> New Releases Page </div>;
+    return (
+        <Container>
+            <SubHeader current='New Releases' />
+        </Container>
+    )
 };
 
 export default ReleasesPage;
